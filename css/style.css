@@ -228,6 +228,9 @@ td.gap-3 {
 	list-style: disc;
 	list-style-position: inside;
 }
+.MC-story-text4 li p{
+	display: inline-block;
+}
 
 
 /*스와이퍼용 */

@@ -1,14 +1,40 @@
 @charset "UTF-8";
+/*구글 폰트아이템*/
+.material-symbols-outlined {
+	font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
 
 .main-logo {
 	width: 154px;
 	margin: 0 auto;
 }
 
-.sub-logo {
-	display: flex;
-	justify-content: center;
-	margin: 15px;
+.hero-img {
+	height: 335px;
+	position: relative;
+	font-size: 0;
+	margin-top: 3rem; /*텍스트처럼 이미지도 상하여백이 있기에 이걸 써야 공백이 처리 가능*/
+}
+
+.model {
+	position: absolute;
+	right: 20%;
+	bottom: 0;
+	z-index: 9;
+}
+
+.bg {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 111, 255);
+	text-align: center;
+	overflow: hidden;
 }
 
 .main-nav {
@@ -18,10 +44,8 @@
 .main-nav ul {
 	display: flex;
 	justify-content: center;
-}
-
-.main-nav li {
-	margin: 15px;
+	column-gap: 1rem;
+	padding: 15px 0;
 }
 
 .main-nav a {
@@ -30,8 +54,241 @@
 	font-size: 16px;
 }
 
+.main-nav a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #01ccff;
+}
+
+.container {
+	width: 1536px;
+	margin: 0 auto;
+}
+
+table {
+	width: 600px;
+	margin: 3rem auto;
+}
+
+table, tr, td, th {
+	border: 1px solid #333;
+}
+
+caption {
+	margin-bottom: 1.5rem;
+	font-size: 18px;
+}
+
+.bold-text {
+	font-weight: bold;
+}
+
+.boder-top-m {
+	border-top-width: medium;
+}
+
+.boder-bottom-m {
+	border-bottom-width: medium;
+}
+
+td, th {
+	padding: 10px 16px;
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+	background-color: #f7f7f7;
+	width: 25%;
+}
+
+th.w75 {
+	width: 75%;
+}
+
+td.gap-1 {
+	text-align: left;
+	padding-left: 1rem;
+}
+
+td.gap-2 {
+	text-align: left;
+	padding-left: 2rem;
+}
+
+td.gap-3 {
+	text-align: left;
+	padding-left: 3rem;
+}
+
+.v-center {
+	vertical-align: middle;
+}
+
+.right-red {
+	background-color: #ffeded;
+}
+
+.warnning {
+	color: red;
+}
+
+/*  about   */
+.page-map {
+	text-align: right;
+	background-color: gold;
+	padding: .5rem .4rem;
+	font-size: .875rem;
+}
+
+.page-map span {
+	vertical-align: text-bottom;
+	font-size: 1.3rem;
+}
+
+.section-title {
+	text-align: left;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 1.5rem;
+}
+
+.section-title::first-letter {
+	font-size: 6rem;
+	padding: .5rem;
+}
+
+.overview, .MC {
+	margin: 3rem;
+}
+
+.overview-story, .MC-story {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 3rem;
+}
+
+.overview-story img, .MC-story img {
+	width: 100%;
+	object-fit: cover;
+	margin-right: 3rem;
+	min-width: 400px;
+	max-width: 450px;
+}
+
+.overview-story-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.overview-story-text1 {
+	font-size: 6rem;
+}
+
+.overview-story-text2 {
+	font-size: 3rem;
+}
+
+.overview-story-text3 {
+	font-size: 2rem;
+}
+
+.overview-story-text4 {
+	font-size: 1.25rem;
+}
+
+.profile {
+	display: inline-block;
+	left: 1rem;
+}
+
+.MC-story-text {
+	display: flex;
+	flex-direction: column;
+}
+.MC-story-text1 {
+	font-size:3rem;
+	font-weight: bold;
+	padding:1rem;
+}
+.MC-story-text2 {
+	font-size:1.5rem;
+	padding:1rem;
+}
+.MC-story-text3 {
+	font-size:3rem;
+	padding:1rem;
+	
+	
+}
+.MC-story-text4 li{
+	font-size:2rem;
+	padding:1rem;
+	list-style: disc;
+	list-style-position: inside;
+}
+
+
+/*스와이퍼용 */
+.castings, .guests{
+	
+	margin: 3rem;
+}
+.swiper {
+  width: 1536px;
+  height: 650px;
+  margin: 0 auto;
+}
+.swiper-slide ul{
+	display:flex;
+	justify-content: center;
+	column-gap: 3rem;
+	width: 80%;
+	margin: 0 auto;
+}
+/*.swiper-slide ul li p:nth-of-type(1){
+	display:flex;
+	justify-content: center;
+	column-gap: 3rem;
+	
+}*/
+.swiper-slide p{
+	text-align: center;
+	padding:.825rem;
+}
+
+.swiper-slide .name{
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: .5rem;
+}
+
+.swiper-slide .pilmo{
+	max-width: 21.875rem;
+	overflow: visible;
+	text-align: left;
+	line-height: 1.4;/*행높이:글자크기의 약 1.5배만큼 띄워주기*/
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset,39%);
+}
+
+.footer {
+	background-color: black;
+	padding-bottom: 30px;
+}
+
+.sub-logo {
+	display: flex;
+	justify-content: center;
+	margin: 15px;
+}
+
 .extra-nav {
 	background-color: #fafafa;
+	border-top: 1px dotted #b9b9b9;
 }
 
 .extra-nav ul {
@@ -44,20 +301,22 @@
 }
 
 .extra-nav a {
-	color: black;
+	color: #666;
 	font-size: 13px;
 	text-decoration: none;
 }
 
-.footer{
-	background-color: black;
+.extra-nav a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #01ccff;
 }
 
-.site-info{
+.site-info {
 	text-align: center;
-	color:#999999;
-	margin-bottom: 30px;
+	color: #999999;
 }
-.site-info p{
+
+.site-info p {
 	margin: 10px;
 }
